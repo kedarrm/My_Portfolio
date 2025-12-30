@@ -129,6 +129,7 @@ export default function ComponentsPage() {
             A curated collection of reusable, production-ready UI components built
             with React, Tailwind CSS, and Framer Motion.
           </p>
+          <p className="text-xs sm:text-sm text-muted-foreground pt-3">More components will be add soon...</p>
         </header>
 
 
