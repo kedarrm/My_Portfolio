@@ -1,0 +1,136 @@
+"use client";
+
+import { motion } from "framer-motion";
+import {
+  SiJavascript,
+  SiPython,
+  SiC,
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiBootstrap,
+  SiFigma,
+  SiDjango,
+  SiFlask,
+  SiGit,
+  SiVscodium,
+  SiMysql,
+  SiPostgresql,
+  SiMongodb,
+  SiGooglecloud,
+} from "react-icons/si";
+import { FaDatabase, FaCloud } from "react-icons/fa";
+import { PiPersonArmsSpreadFill } from "react-icons/pi";
+import { TbBrandFramer } from "react-icons/tb";
+
+const skillGroups = [
+  {
+    title: "Languages",
+    items: [
+      { name: "JavaScript", icon: SiJavascript },
+      { name: "Python", icon: SiPython },
+      { name: "C", icon: SiC },
+      { name: "SQL", icon: FaDatabase },
+    ],
+  },
+  {
+    title: "Frontend",
+    items: [
+      { name: "React", icon: SiReact },
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
+      { name: "Bootstrap", icon: SiBootstrap },
+      { name: "Figma", icon: SiFigma },
+    ],
+  },
+  {
+    title: "Backend",
+    items: [
+      { name: "Django", icon: SiDjango },
+      { name: "Flask", icon: SiFlask },
+      { name: "MySQL", icon: SiMysql },
+      { name: "PostgreSQL", icon: SiPostgresql },
+      { name: "MongoDB", icon: SiMongodb },
+    ],
+  },
+  {
+    title: "Tools & Others",
+    items: [
+      { name: "Clerk", icon: PiPersonArmsSpreadFill },
+      { name: "Inngest", icon: FaCloud },
+      { name: "Google Cloud", icon: SiGooglecloud },
+      { name: "Claude", icon: FaCloud },
+      { name: "Motion", icon: TbBrandFramer },
+      { name: "Git", icon: SiGit },
+      { name: "VS Code", icon: SiVscodium },
+    ],
+  },
+];
+
+// animation variants
+const container = {
+  hidden: {},
+  show: {
+    transition: { staggerChildren: 0.08 },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 12 },
+  show: { opacity: 1, y: 0 },
+};
+
+export default function SkillsSection() {
+  return (
+    <section className="space-y-2 sm:space-y-2">
+      {/* Section title */}
+      <h2 className="text-xl sm:text-2xl font-bold">
+        Skills & Technologies
+      </h2>
+
+      <div className="space-y-2 sm:space-y-4">
+        {skillGroups.map((group) => (
+          <motion.div
+            key={group.title}
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="space-y-3 sm:space-y-4"
+          >
+            <h3 className="text-sm sm:text-base font-medium text-muted-foreground tracking-wide">
+              {group.title}
+            </h3>
+
+            <motion.div className="flex flex-wrap gap-2 sm:gap-3">
+              {group.items.map((skill) => {
+                const Icon = skill.icon;
+
+                return (
+                  <motion.div
+                    key={skill.name}
+                    variants={item}
+                    whileHover={{ y: -2 }}
+                    className="group flex items-center gap-2 rounded-md sm:rounded-lg px-2.5 sm:px-3 py-1.5 sm:py-2 text-xs sm:text-sm text-muted-foreground bg-background hover:bg-muted transition ring-1 sm:ring-2 ring-foreground/10 ring-offset-1 ring-offset-background"
+                  >
+                    <motion.span
+                      whileHover={{ scale: 1.15 }}
+                      className="text-foreground"
+                    >
+                      <Icon className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                      
+                    </motion.span>
+
+                    <span className="font-medium">
+                      {skill.name}
+                    </span>
+                  </motion.div>
+                );
+              })}
+            </motion.div>
+          </motion.div>
+        ))}
+      </div>
+    </section>
+  );
+}
