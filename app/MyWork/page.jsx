@@ -203,7 +203,7 @@ export default function ComponentsPage() {
                   </p>
 
                   {/* Tech */}
-                  <div className="flex flex-wrap gap-2 mb-3">
+                  <div className="flex flex-wrap gap-3 mb-3">
                     {component.tech.map((tech) => {
                       const TechIcon = techIcons[tech];
 
@@ -211,8 +211,8 @@ export default function ComponentsPage() {
                         <span
                           key={tech}
                           className="flex items-center gap-1.5
-                            text-[10px] sm:text-xs
-                            rounded border px-2 py-1 text-muted-foreground"
+                            text-[10px] sm:text-xs bg-accent hover:bg-accent/40
+                            rounded-sm px-2 py-1 text-muted-foreground ring-1 ring-offset-2 ring-foreground/20 ring-offset-background"
                         >
                           {TechIcon && <TechIcon className="h-3 w-3" />}
                           {tech}

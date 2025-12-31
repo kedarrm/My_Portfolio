@@ -98,28 +98,29 @@ export const Tooltip = ({
 
 const TooltipShowcase = () => {
   return (
-    <div className="flex items-center justify-center">
-      
-
-        <div className="flex flex-col gap-6 items-center text-center">
-          {['top', 'bottom', 'right', 'left'].map((pos) => (
-            <p
-              key={pos}
-              className="max-w-lg text-muted-foreground leading-relaxed"
+    <div className="flex items-center justify-center px-2 sm:px-6">
+      <div className="flex flex-col gap-4 sm:gap-6 items-center text-center sm:items-center sm:text-center w-full max-w-2xl">
+        {['top', 'bottom', 'right', 'left'].map((pos) => (
+          <p
+            key={pos}
+            className="text-md sm:text-base text-muted-foreground leading-relaxed"
+          >
+            There was a problem with the server.{' '}
+            <Tooltip
+              placement={pos}
+              content="Once AWS went down. AWS is generally reliable, but outages can still happen."
             >
-              There was a problem with the server.{' '}
-              <Tooltip
-                placement={pos}
-                content="Once AWS went down. AWS is generally reliable, but outages can still happen."
-              >
-                <button className="font-bold cursor-pointer">
-                  Once AWS went down
-                </button>
-              </Tooltip>{' '}
-              we had to quickly migrate to a new provider.
-            </p>
-          ))}
-        </div>
+              <button className=" font-semibold underline-offset-4
+                  cursor-pointer
+                  focus-visible:outline-none focus-visible:ring-2
+                  focus-visible:ring-accent rounded-sm">
+                Once AWS went down ({pos})
+              </button>
+            </Tooltip>{' '}
+            we had to quickly migrate to a new provider.
+          </p>
+        ))}
+      </div>
     </div>
   );
 };
