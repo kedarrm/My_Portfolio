@@ -44,7 +44,7 @@ export default function FooterSection() {
       </div>
 
       <div>
-        <a href="/Kedar_Resume.pdf" download className="inline-flex items-center gap-2 rounded-lg bg-accent px-17 py-2 sm:px-7 sm:py-2 text-sm font-medium text-foreground/70 transition hover:bg-accent/40 ring-1 ring-offset-2 ring-foreground/20 ring-offset-background cursor-pointer">
+        <a href="/Kedar_Resume.pdf" download className="inline-flex items-center gap-2 rounded-lg bg-accent px-12 py-2 sm:px-7 sm:py-2 text-sm font-medium text-foreground/70 transition hover:bg-accent/40 ring-1 ring-offset-2 ring-foreground/20 ring-offset-background cursor-pointer">
           <DownloadCloud className="h-4 w-4 text-green-400" />
           Download My Resume
         </a>
