@@ -102,7 +102,7 @@ export default function SkillsSection() {
               {group.title}
             </h3>
 
-            <motion.div className="flex flex-wrap gap-2 sm:gap-3">
+            <motion.div className="flex flex-wrap gap-3 sm:gap-3">
               {group.items.map((skill) => {
                 const Icon = skill.icon;
 
@@ -111,7 +111,7 @@ export default function SkillsSection() {
                     key={skill.name}
                     variants={item}
                     whileHover={{ y: -2 }}
-                    className="group flex items-center gap-2 rounded-md sm:rounded-lg px-2.5 sm:px-3 py-1.5 sm:py-2 text-xs sm:text-sm text-muted-foreground bg-background hover:bg-muted transition ring-1 sm:ring-2 ring-foreground/10 ring-offset-1 ring-offset-background"
+                    className="group flex items-center sm:mt-0 mt-1 gap-3 rounded-md sm:rounded-md px-2.5 sm:px-3 py-1.5 sm:py-2 text-xs sm:text-sm text-muted-foreground bg-background hover:bg-muted transition ring-1 ring-offset-2 ring-foreground/20 ring-offset-background"
                   >
                     <motion.span
                       whileHover={{ scale: 1.15 }}
@@ -121,7 +121,7 @@ export default function SkillsSection() {
                       
                     </motion.span>
 
-                    <span className="font-medium">
+                    <span className="font-normal">
                       {skill.name}
                     </span>
                   </motion.div>

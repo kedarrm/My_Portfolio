@@ -33,7 +33,7 @@ const educationData = [
 
 export default function EducationSection() {
   return (
-    <section className="w-full py-4">
+    <section className="w-full py-2">
       <motion.h2
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}

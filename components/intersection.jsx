@@ -33,7 +33,7 @@ export default function FrameBox({ children }) {
         <span className="absolute bottom-0 -left-16 -right-16 h-px bg-border" />
 
         {/* Content */}
-        <div className="relative px-8 py-8">
+        <div className="relative px-4 py-8">
           {children}
         </div>
 

@@ -24,7 +24,7 @@ export default function ContactSection() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="space-y-4 sm:space-y-4"
+      className="space-y-2 sm:space-y-4"
     >
       {/* Heading */}
       <motion.h2

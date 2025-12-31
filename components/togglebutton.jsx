@@ -18,7 +18,7 @@ export function ModeToggle() {
     return (
         <button
             variant="outline"
-            className='cursor-pointer rounded-full border p-2 '
+            className='cursor-pointer pt-2'
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         >
             {theme === "dark" ? (

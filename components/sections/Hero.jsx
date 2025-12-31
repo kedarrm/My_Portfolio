@@ -49,9 +49,9 @@ export default function HeroSection() {
                             height={144}
                             className="
                 rounded-lg object-cover
-                w-42 h-52
+                w-42 h-60
                 sm:w-20 sm:h-20
-                md:w-36 md:h-56
+                md:w-44 md:h-60
                 shadow-2xl cursor-pointer
               "
                         />
@@ -70,7 +70,7 @@ export default function HeroSection() {
                 >
                     {/* Heading */}
                     <div className="space-y-1">
-                        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
+                        <h1 className="text-xl sm:text-3xl md:text-4xl font-bold">
                             Hi, I&apos;m Mahamure Kedar
                         </h1>
 
@@ -80,42 +80,44 @@ export default function HeroSection() {
                     </div>
 
                     {/* Actions */}
-                    <div className="flex flex-wrap justify-center sm:justify-start items-center sm:gap-3 gap-6">
-                        <a
-                            href="https://www.linkedin.com/in/kedar-mahamure/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="group relative flex items-center gap-2 bg-accent hover:bg-accent/40 px-4 sm:px-6 py-1.5 text-xs sm:text-sm font-medium text-foreground/70 transition ring-1 ring-offset-2 ring-foreground/20 ring-offset-background rounded-md">
-                            <motion.span
-                                initial={{ scale: 0, opacity: 0 }}
-                                animate={{ scale: 1, opacity: 1 }}
-                                transition={{ delay: 0.3, type: "spring", stiffness: 260 }}
-                                className="relative flex h-2 w-2">
-                                <span className="relative flex h-2.5 w-2.5">
+                    <div className="flex flex-col sm:flex-row items-center sm:items-center gap-6 sm:gap-3">
+                             <SkillIcons />
+
+                        {/* Buttons Row */}
+                        <div className="flex items-center gap-3">
+                            <a
+                                href="https://www.linkedin.com/in/kedar-mahamure/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group relative flex items-center gap-2 bg-accent hover:bg-accent/40 px-4 sm:px-6 py-1.5 text-xs sm:text-sm font-medium text-foreground/70 transition ring-1 ring-offset-2 ring-foreground/20 ring-offset-background rounded-md"
+                            >
+                                <motion.span
+                                    initial={{ scale: 0, opacity: 0 }}
+                                    animate={{ scale: 1, opacity: 1 }}
+                                    transition={{ delay: 0.3, type: "spring", stiffness: 260 }}
+                                    className="relative flex h-2 w-2"
+                                >
                                     <span className="relative flex h-2.5 w-2.5">
-                                        <span className="absolute inset-0 rounded-full bg-green-500 opacity-50 blur-xs scale-150 animate-[pulse_1s_ease-in-out_infinite]" /> 
-                                        <span className="absolute inset-0 rounded-full bg-green-500 opacity-30 animate-[ping_1s_ease-in-out_infinite]" /> 
+                                        <span className="absolute inset-0 rounded-full bg-green-500 opacity-50 blur-xs scale-150 animate-[pulse_1s_ease-in-out_infinite]" />
+                                        <span className="absolute inset-0 rounded-full bg-green-500 opacity-30 animate-[ping_1s_ease-in-out_infinite]" />
                                         <span className="relative h-2.5 w-2.5 rounded-full bg-green-400 shadow-[0_0_8px_rgba(34,197,94,0.8)]" />
                                     </span>
+                                </motion.span>
+
+                                <span className="group-hover:text-foreground transition">
+                                    Open to Work
                                 </span>
-                            </motion.span>
+                            </a>
 
-                            <span className="group-hover:text-foreground transition">
-                                Open to Work
-                            </span>
-                        </a>
-
-                        <SkillIcons />
-
-                        <Link
-                            href="/MyWork"
-                            className="flex items-center gap-2 bg-accent hover:bg-accent/40 px-4 sm:px-6 py-1.5 text-xs sm:text-sm font-medium text-foreground/70 transition ring-1 ring-offset-2 ring-foreground/20 ring-offset-background rounded-md"
-                        >
-                            <Folder className="h-4 w-4 text-green-400" />
-                            My Work
-                        </Link>
+                            <Link
+                                href="/MyWork"
+                                className="group flex items-center gap-2 bg-accent hover:bg-accent/40 px-4 sm:px-6 py-1.5 text-xs sm:text-sm font-medium text-foreground/70 transition ring-1 ring-offset-2 ring-foreground/20 ring-offset-background rounded-md"
+                            >
+                                <Folder className="h-4 w-4 text-green-400" />
+                                My Work
+                            </Link>
+                        </div>   
                     </div>
-
                     {/* Description */}
                     <p className="text-muted-foreground sm:max-w-xl max-w-6xl text-xs sm:text-base">
                         Frontend Developer specializing in responsive, high-performance web

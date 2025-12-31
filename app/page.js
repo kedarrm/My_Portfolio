@@ -16,8 +16,6 @@ export default function Home() {
           fixed top-0 right-2 sm:right-6 md:right-10
           z-50
           bg-background/80 backdrop-blur
-          rounded-lg
-          p-2
         "
       >
         <ModeToggle />

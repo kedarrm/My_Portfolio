@@ -30,7 +30,7 @@ const techIcons = {
 
 const projects = [
   {
-    title: "MediMeet Healthcare Appointment Platform",
+    title: "Doctor Appointment Platform",
     subtitle: "Doctor Appointment Platform",
     year: "2023",
     link: "https://doc-meet-six.vercel.app/",
@@ -49,7 +49,7 @@ const projects = [
   },
   {
     title: "Pixxel AI Image Editor",
-    subtitle: "Full-Stack AI Image Editing Platform",
+    subtitle: "AI Image Editing Platform",
     year: "2024",
     link: "https://pixxel-silk.vercel.app/",
     image: "/pixxel.png",
@@ -102,7 +102,7 @@ export default function ProjectsSection() {
     <section className="space-y-4 sm:space-y-4">
       <h2 className="text-xl sm:text-2xl font-bold">Projects</h2>
 
-      <div className="space-y-6">
+      <div className="space-y-4">
         {projects.map((project) => (
           <motion.a
             key={project.title}
@@ -150,7 +150,7 @@ export default function ProjectsSection() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="relative mt-4 aspect-video overflow-hidden rounded-lg border"
+              className="relative mt-2 aspect-video overflow-hidden rounded-lg border"
             >
               <Image
                 src={project.image}
@@ -175,7 +175,7 @@ export default function ProjectsSection() {
             </motion.div>
 
             {/* Description */}
-            <p className="mt-4 text-xs text-muted-foreground leading-relaxed max-w-full md:max-w-3xl">
+            <p className="mt-2 text-xs sm:text-base text-muted-foreground leading-relaxed max-w-full md:max-w-3xl">
               {project.description}
             </p>
 
@@ -185,7 +185,7 @@ export default function ProjectsSection() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="mt-4 flex flex-wrap gap-2 sm:gap-3"
+              className="mt-2 flex flex-wrap gap-3 sm:gap-3"
             >
               {project.tech.map((tech) => {
                 const Icon = techIcons[tech];
@@ -197,7 +197,7 @@ export default function ProjectsSection() {
                     className="inline-flex items-center gap-2 rounded-md
                                px-2.5 py-1 text-xs
                                text-muted-foreground transition
-                  ring-1 ring-offset-2 ring-foreground/20 ring-offset-background
+                               ring-1 ring-offset-2 ring-foreground/20 ring-offset-background
                                hover:bg-muted hover:text-foreground "
                   >
                     {Icon && <Icon className="h-3.5 w-3.5" />}
