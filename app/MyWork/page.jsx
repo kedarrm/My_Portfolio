@@ -129,7 +129,7 @@ export default function ComponentsPage() {
             A curated collection of reusable, production-ready UI components built
             with React, Tailwind CSS, and Framer Motion.
           </p>
-          <p className="text-xs sm:text-sm text-muted-foreground pt-3">More components will be add soon...</p>
+          <p className="text-xs sm:text-sm text-muted-foreground pt-3">More components will be adding soon...</p>
         </header>
 
 
@@ -240,7 +240,7 @@ export default function ComponentsPage() {
               © {new Date().getFullYear()} All rights reserved.
             </p>
 
-            <motion.p className="text-foreground/20 text-3xl sm:text-5xl lg:text-7xl font-extrabold text-center mask-b-from-0">
+            <motion.p className="text-foreground/20 text-3xl sm:text-5xl lg:text-7xl font-extrabold text-center mask-b-from-10">
               MAHAMURE KEDAR
             </motion.p>
 
