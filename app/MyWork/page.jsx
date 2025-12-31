@@ -63,7 +63,7 @@ const componentsData = [
     name: "Ripple Button",
     category: "Effect",
     description: "Material-style ripple effect on click.",
-    tech: ["React", "CSS"],
+    tech: ["React", "Tailwind"],
     slug: "ripple",
   },
   {
@@ -146,7 +146,7 @@ export default function ComponentsPage() {
                     rounded-sm text-xs sm:text-sm transition cursor-pointer
                     ring-1 ring-offset-2 ring-foreground/20 ring-offset-background
                     ${activeCategory === category
-                      ? "bg-foreground/90 text-background/60"
+                      ? "bg-foreground/50 text-background/90"
                       : "bg-background text-muted-foreground hover:bg-muted"
                     }`}
                 >
@@ -161,7 +161,7 @@ export default function ComponentsPage() {
         </div>
 
 
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 pb-20">
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
           <motion.div
             layout
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
@@ -224,9 +224,9 @@ export default function ComponentsPage() {
                   {/* Action */}
                   <Link
                     href={`/demos/${component.slug}`}
-                    className="text-sm font-medium hover:underline"
+                    className="text-xs sm:text-sm font-semibold text-foreground/70 hover:text-foreground transition"
                   >
-                    View
+                    View Component
                   </Link>
                 </motion.div>
               ))}
