@@ -20,8 +20,10 @@ import {
   Wind,
   Atom,
   Cpu,
+  BadgeAlert,
 } from "lucide-react";
 import PageLoader from "@/components/Loader";
+import Badge from "../demos/[slug]/_components/Badge";
 
 
 const categories = [
@@ -31,6 +33,7 @@ const categories = [
   "Navbar",
   "Text",
   "Toolbar",
+  "Badge",
 ];
 
 const categoryIcons = {
@@ -40,6 +43,7 @@ const categoryIcons = {
   Navbar: PanelTop,
   Text: Type,
   Toolbar: LayoutGrid,
+  Badge: BadgeAlert,
 };
 
 const techIcons = {
@@ -90,6 +94,14 @@ const componentsData = [
     tech: ["React", "Framer Motion"],
     slug: "toolbar",
   },
+  {
+    id: 6,
+    name: "Badge",
+    category: "Badge",
+    description: "Minimilistic Badge with React and Tailwind CSS.",
+    tech: ["React", "Tailwind"],
+    slug: "badge",
+  },
 ];
 
 const previewMap = {
@@ -98,6 +110,7 @@ const previewMap = {
   "Expanding Menu": <Menu />,
   "Animated Text": <AnimatedText />,
   "Directional Toolbar": <Toolbar />,
+  "Badge": <Badge />,
 };
 
 

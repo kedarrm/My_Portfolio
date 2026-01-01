@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 import { FaUser, FaEnvelope, FaPaperPlane } from "react-icons/fa";
 
-/* animation variants */
 const container = {
   hidden: {},
   show: {

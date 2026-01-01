@@ -7,6 +7,7 @@ import Toolbar from "./_components/Toolbar";
 import AnimatedText from "./_components/Text";
 import DescriptionSection from "@/app/MyWork/_components/Description";
 import DemoClient from "./DemoClient";
+import Badge from "./_components/Badge";
 
 
 const demos = [
@@ -131,6 +132,43 @@ const demos = [
       tech: ["React", "Tailwind CSS"],
     }
   },
+  {
+  slug: "badge",
+  name: "Badge Component",
+  description:
+    "A lightweight, theme-aware badge component for labels, tags, and status indicators with full light and dark mode support.",
+  code: "https://github.com/yourname/badge-component",
+  component: Badge,
+  details: {
+    overview:
+      "A minimal yet polished badge component designed for modern UIs. It automatically adapts to light and dark themes using Tailwind CSS, providing consistent contrast, subtle depth, and a clean pill-shaped design.",
+    useCases: [
+      "Skill tags in portfolios",
+      "Status indicators (Active, Beta, New)",
+      "Category labels",
+      "Feature highlights",
+      "Metadata chips",
+    ],
+    whyUse: [
+      "Theme-aware out of the box (light & dark)",
+      "No JavaScript required",
+      "Consistent design system friendly",
+      "Accessible contrast and spacing",
+      "Easy to reuse across projects",
+    ],
+    variants: [
+      "Default",
+      "With icon",
+      "Status badge (success / warning / error)",
+      "Clickable tag",
+    ],
+    tech: [
+      "React",
+      "Tailwind CSS",
+    ],
+  },
+}
+
 ];
 
 
