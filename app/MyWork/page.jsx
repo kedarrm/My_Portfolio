@@ -135,7 +135,7 @@ export default function ComponentsPage() {
       {loading && <PageLoader />}
       <div className="min-h-screen bg-background text-foreground">
         <header className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-3">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-3">
             Component Library
           </h1>
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl">

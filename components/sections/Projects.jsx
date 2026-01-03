@@ -116,7 +116,7 @@ export default function ProjectsSection() {
             whileHover={{ y: -4 }}
             transition={{ type: "spring", stiffness: 180 }}
             className="group block rounded-xl border
-                       p-2 sm:p-6
+                       p-2 sm:p-3
                        bg-background transition
                        hover:bg-muted/40
                        focus-visible:outline-none
@@ -127,12 +127,12 @@ export default function ProjectsSection() {
             {/* Header */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <div>
-                <p className="text-xs text-muted-foreground">
-                  {project.subtitle} • {project.year}
-                </p>
-                <h3 className="text-sm sm:text-lg md:text-xl font-medium">
+                <h3 className="text-sm sm:text-lg md:text-xl font-semibold">
                   {project.title}
                 </h3>
+                <p className="text-sm text-muted-foreground">
+                  {project.subtitle} • {project.year}
+                </p>
               </div>
 
               <motion.span
@@ -150,13 +150,13 @@ export default function ProjectsSection() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="relative mt-2 aspect-video overflow-hidden rounded-lg border"
+              className="relative mt-2 aspect-video overflow-hidden rounded-lg border shadow-2xl"
             >
               <Image
                 src={project.image}
                 alt={project.title}
                 fill
-                sizes="(max-width: 768px) 100vw, 700px"
+                sizes="(max-width: 668px) 100vw, 700px"
                 className="object-cover transition-all duration-500
                            group-hover:scale-[1.04]
                            group-hover:blur-[1.5px]"
@@ -175,7 +175,7 @@ export default function ProjectsSection() {
             </motion.div>
 
             {/* Description */}
-            <p className="mt-2 text-xs sm:text-base text-muted-foreground leading-relaxed max-w-full md:max-w-3xl">
+            <p className="mt-2 text-xs sm:text-[14px] text-muted-foreground leading-relaxed max-w-full md:max-w-3xl">
               {project.description}
             </p>
 
@@ -194,7 +194,7 @@ export default function ProjectsSection() {
                     key={tech}
                     variants={techItem}
                     whileHover={{ y: -2 }}
-                    className="inline-flex items-center gap-2 rounded-md
+                    className="inline-flex items-center gap-2 rounded-md mt-2
                                px-2.5 py-1 text-xs
                                text-muted-foreground transition
                                ring-1 ring-offset-2 ring-foreground/20 ring-offset-background
