@@ -44,7 +44,7 @@ export default function FrameBox({ children }) {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         tranisition={{ duration: 1.3 }}
-        className="text-foreground/20 bg-clip-text text-3xl sm:text-7xl text-center font-extrabold mask-b-from-10 p-4"
+        className="text-foreground/20 bg-clip-text text-3xl sm:text-7xl text-center font-extrabold mask-b-from-0 sm:mask-b-from-10 p-4"
       >
         MAHAMURE KEDAR
       </motion.p>

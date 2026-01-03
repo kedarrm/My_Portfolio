@@ -105,6 +105,7 @@ export default function ContactSection() {
           <FaPaperPlane className="text-xs text-green-400" />
           Send message
         </motion.button>
+        {/* <p>call me +91 7989019728</p> */}
       </motion.form>
 
      
