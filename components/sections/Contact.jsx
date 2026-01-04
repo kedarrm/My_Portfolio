@@ -116,7 +116,7 @@ export default function ContactSection() {
             placeholder="Your message"
             rows={4}
             className="w-full rounded-lg border bg-background
-                       px-6 py-2.5 text-sm outline-none resize-none transition
+                       px-3 py-2.5 text-sm outline-none resize-none transition
                        focus:ring-2 focus:ring-accent/90"
           />
         </motion.div>
