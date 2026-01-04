@@ -128,10 +128,10 @@ export default function ContactSection() {
           whileTap={!isSending ? { scale: 0.97 } : {}}
           type="submit"
           disabled={isSending}
-          className="inline-flex items-center justify-center gap-2
+          className="w-full sm:w-auto inline-flex items-center justify-center gap-2
                      rounded-lg bg-accent hover:bg-accent/40
                      px-6 py-2.5 text-sm font-medium
-                     text-foreground/70 transition
+                     text-foreground/70 hover:text-foreground transition
                      ring-1 ring-offset-2 ring-foreground/20
                      ring-offset-background cursor-pointer
                      disabled:opacity-60 disabled:cursor-not-allowed"

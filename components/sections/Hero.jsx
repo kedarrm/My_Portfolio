@@ -111,7 +111,7 @@ export default function HeroSection() {
 
                             <Link
                                 href="/MyWork"
-                                className="group flex items-center gap-2 bg-accent hover:bg-accent/40 px-4 sm:px-6 py-1.5 text-xs sm:text-sm font-medium text-foreground/70 transition ring-1 ring-offset-2 ring-foreground/20 ring-offset-background rounded-md"
+                                className="group flex items-center gap-2 bg-accent hover:bg-accent/40 px-4 sm:px-6 py-1.5 text-xs sm:text-sm font-medium text-foreground/70 hover:text-foreground transition ring-1 ring-offset-2 ring-foreground/20 ring-offset-background rounded-md"
                             >
                                 <Folder className="h-4 w-4 text-green-400" />
                                 My Work

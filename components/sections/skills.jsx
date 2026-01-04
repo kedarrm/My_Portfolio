@@ -21,7 +21,7 @@ import {
 } from "react-icons/si";
 import { FaDatabase, FaCloud } from "react-icons/fa";
 import { PiPersonArmsSpreadFill } from "react-icons/pi";
-import { TbBrandFramer } from "react-icons/tb";
+import { TbBrandFramer, TbBrandFramerMotion } from "react-icons/tb";
 
 const skillGroups = [
   {
@@ -60,7 +60,7 @@ const skillGroups = [
       { name: "Inngest", icon: FaCloud },
       { name: "Google Cloud", icon: SiGooglecloud },
       { name: "Claude", icon: FaCloud },
-      { name: "Motion", icon: TbBrandFramer },
+      { name: "Framer Motion", icon: TbBrandFramerMotion },
       { name: "Git", icon: SiGit },
       { name: "VS Code", icon: SiVscodium },
     ],
@@ -111,7 +111,7 @@ export default function SkillsSection() {
                     key={skill.name}
                     variants={item}
                     whileHover={{ y: -2 }}
-                    className="group flex items-center sm:mt-0 mt-1 gap-3 rounded-md sm:rounded-md px-2.5 sm:px-3 py-1.5 sm:py-2 text-xs sm:text-sm text-muted-foreground bg-accent/50 hover:bg-accent transition ring-1 ring-offset-2 ring-foreground/20 ring-offset-background"
+                    className="group flex items-center sm:mt-0 mt-1 sm:gap-1.5 gap-1 rounded-sm sm:rounded-md px-2 sm:px-3 py-1 sm:py-2 text-xs sm:text-sm text-muted-foreground bg-accent/50 hover:bg-accent hover:text-foreground transition ring-1 ring-offset-2 ring-foreground/20 ring-offset-background"
                   >
                     <motion.span
                       whileHover={{ scale: 1.15 }}

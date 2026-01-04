@@ -10,7 +10,7 @@ const educationData = [
     college: "Nims Institute of Engineering and Technology, Jaipur, Rajasthan",
     year: "2021 – 2025",
     description:
-      "B.Tech graduate in Computer Science and Engineering with expertise in full-stack development, software architecture, and problem solving, and proven experience building production-ready AI-driven applications.",
+      "B.Tech Computer science graduate specializing in full-stack development and modern web technologies. Experienced in designing, building, and shipping reliable applications.",
     icon: TbSchool,
   },
   {
@@ -50,15 +50,15 @@ export default function EducationSection() {
           whileInView={{ scaleY: 1 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="absolute left-3 sm:left-6 top-0 bottom-0 w-px
-                     origin-top
+          className="absolute left-3 sm:left-6 top-0 bottom-0 w-1 rounded-full
+                     origin-top 
                      bg-linear-to-b
                      from-foreground/30
                      via-foreground/10
                      to-transparent"
         />
 
-        <div className="space-y-12">
+        <div className="space-y-6 sm:space-y-10">
           {educationData.map((edu, index) => (
             <TimelineItem key={index} edu={edu} index={index} />
           ))}
@@ -79,7 +79,7 @@ function TimelineItem({ edu, index }) {
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.45, delay: index * 0.12 }}
       viewport={{ once: true }}
-      className="relative pl-10 sm:pl-16 md:pl-20"
+      className="relative pl-11 sm:pl-16"
     >
       <div
         className="absolute left-1.5 sm:left-3 top-2
@@ -119,13 +119,13 @@ function TimelineItem({ edu, index }) {
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: 10, scale: 0.96 }}
                 transition={{ duration: 0.25, ease: "easeOut" }}
-                className="absolute left-0 top-full mt-3
-                           w-65 sm:w-130
+                className="absolute -left-10 sm:left-0 top-full mt-3
+                           w-75 sm:w-130
                            rounded-lg
                            bg-background/90 backdrop-blur
                            border border-border
-                           p-2
-                           text-sm text-muted-foreground
+                           p-2 text-xs
+                           sm:text-sm text-muted-foreground
                            shadow-xl z-50"
               >
                 {edu.description}
