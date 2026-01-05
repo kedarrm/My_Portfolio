@@ -169,20 +169,7 @@ export default function DescriptionSection({ details }) {
             return (
               <motion.span
                 key={tech}
-                whileHover={{ scale: 1.08, y: -1 }}
-                whileTap={{ scale: 0.95 }}
-                className="
-          group flex items-center gap-2
-          cursor-default
-          rounded-lg
-          bg-accent/60 hover:bg-accent/40
-          px-4 py-1.5
-          text-sm font-medium
-          text-foreground/80
-          shadow-sm
-          ring-1 ring-offset-2 ring-foreground/20 ring-offset-background
-          transition
-        "
+                className="group flex items-center gap-2 cursor-default rounded-lg bg-accent/60 hover:bg-accent/40 px-4 py-1.5 text-sm font-medium text-muted-foreground hover:text-foreground shadow-sm ring-1 ring-offset-2 ring-foreground/20 ring-offset-background transition"
               >
                 {Icon && (
                   <Icon

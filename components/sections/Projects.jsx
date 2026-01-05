@@ -162,7 +162,7 @@ export default function ProjectsSection() {
                            group-hover:blur-[1.5px]"
               />
 
-              <div className="absolute inset-0 bg-black/5 opacity-0
+              <div className="absolute inset-0 bg-black/10 opacity-0
                               group-hover:opacity-100 transition" />
 
               <div className="absolute inset-0 flex items-center justify-center

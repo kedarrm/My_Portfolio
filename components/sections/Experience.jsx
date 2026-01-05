@@ -10,6 +10,7 @@ import {
 import { FaEnvelope } from "react-icons/fa";
 import { TbServer } from "react-icons/tb";
 import Image from "next/image";
+import { useState } from "react";
 
 const techStack = [
     { name: "Next.js", icon: SiNextdotjs },
@@ -20,6 +21,7 @@ const techStack = [
 ];
 
 export default function ExperienceTimeline() {
+    const [showPreview, setShowPreview] = useState(false);
     return (
         <section className="space-y-4">
             <h2 className="text-2xl font-bold">Experience</h2>
@@ -54,34 +56,67 @@ export default function ExperienceTimeline() {
                                     className="object-contain p-1"
                                 />
                             </div>
-                            <h3 className="text-sm font-extrabold sm:text-lg sm:font-semibold">
-                                Freelance Full Stack Developer
-                            </h3>
+                            <div
+                                className="relative inline-block"
+                                onMouseEnter={() => setShowPreview(true)}
+                                onMouseLeave={() => setShowPreview(false)}
+                            >
+                                <h2 className="text-md font-bold sm:text-xl sm:font-extrabold cursor-pointer">
+                                    Full Stack Developer
+                                </h2>
+
+                                {/* Tooltip Image */}
+                                <motion.div
+                                    initial={{ opacity: 0, y: 8, scale: 0.96 }}
+                                    animate={
+                                        showPreview
+                                            ? { opacity: 1, y: 0, scale: 1 }
+                                            : { opacity: 0, y: 8, scale: 0.96 }
+                                    }
+                                    transition={{ duration: 0.2, ease: "easeOut" }}
+                                    className="pointer-events-none absolute left-1/2 top-full z-50 mt-3 w-72 -translate-x-1/2 rounded-lg border bg-background shadow-xl overflow-hidden"
+                                >
+                                    {/* Image Wrapper */}
+                                    <div className="relative h-40 w-full">
+                                        <Image
+                                            src="/fc.png"
+                                            alt="Farmers Choice Preview"
+                                            fill
+                                            className="object-cover"
+                                        />
+
+                                        {/* Overlay Text */}
+                                        <div className="absolute inset-0 flex items-end justify-center bg-linear-to-t from-black/60 via-black/20 to-transparent">
+                                            <p className="mb-2 text-sm font-semibold text-white">
+                                                Farmers Choice
+                                            </p>
+                                        </div>
+                                    </div>
+                                </motion.div>
+                            </div>
                         </div>
 
                         <div className="flex flex-col gap-0">
                             <span className="text-xs text-muted-foreground">
                                 Jul 2025 – Nov 2025
 
-                                </span>
-                                <a
-                                    href="https://www.farmerschoice.in/index.html"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-muted-foreground hover:text-foreground transition"
-                                >
-                                    View Live Project
-                                    <ExternalLink className="h-3.5 w-3.5 text-green-500" />
-                                </a>
+                            </span>
+                            <a
+                                href="https://www.farmerschoice.in/index.html"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-muted-foreground hover:text-foreground transition"
+                            >
+                                View Live Project
+                                <ExternalLink className="h-3.5 w-3.5 text-green-500" />
+                            </a>
                         </div>
-
-
                     </div>
 
 
 
                     <p className="mt-1 text-sm text-muted-foreground">
-                        Client Project · Farmers Choice (Agriculture Products Platform)
+                       Freelance Client Project · Farmers Choice (Agriculture Products Platform)
                     </p>
 
                     {/* Responsibilities */}

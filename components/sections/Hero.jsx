@@ -35,7 +35,7 @@ export default function HeroSection() {
           flex flex-col
           sm:flex-row
           items-center sm:items-start
-          gap-6 sm:gap-8
+          gap-6 sm:gap-6
         "
             >
                 {/* IMAGE */}
@@ -61,12 +61,7 @@ export default function HeroSection() {
                 {/* CONTENT */}
                 <motion.div
                     variants={item}
-                    className="
-            flex flex-col
-            gap-4
-            text-center sm:text-left
-            items-center sm:items-start
-          "
+                    className="flex flex-col gap-4 text-center sm:text-left pt-0 sm:pt-4 items-center sm:items-start"
                 >
                     {/* Heading */}
                     <div className="space-y-1">

@@ -136,11 +136,11 @@ export default function ComponentsPage() {
       <div className="min-h-screen bg-background text-foreground">
         <header className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-3">
-            Component Library
+            My Expertise
           </h1>
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl">
-            A curated collection of reusable, production-ready UI components built
-            with React, Tailwind CSS, and Framer Motion.
+            High-performance, accessible UI and reusable components built with modern React
+            and animation-first design principles.
           </p>
           <p className="text-xs sm:text-sm text-muted-foreground pt-3">More components will be adding soon...</p>
         </header>
@@ -156,10 +156,10 @@ export default function ComponentsPage() {
                   key={category}
                   onClick={() => setActiveCategory(category)}
                   className={`group mt-3 px-4 py-1.5 flex items-center gap-2
-                    rounded-sm text-xs sm:text-sm transition cursor-pointer
+                    rounded-sm text-xs sm:text-sm transition cursor-pointer hover:text-foreground
                     ring-1 ring-offset-2 ring-foreground/20 ring-offset-background
                     ${activeCategory === category
-                      ? "bg-foreground/50 text-background/90"
+                      ? "bg-foreground/50 text-background"
                       : "bg-background text-muted-foreground hover:bg-muted"
                     }`}
                 >
@@ -199,7 +199,7 @@ export default function ComponentsPage() {
                     <div className="absolute inset-0 bg-background/80 backdrop-blur opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
                       <Link
                         href={`/demos/${component.slug}`}
-                        className="text-xs bg-accent rounded-lg px-4 py-2"
+                        className="text-xs text-foreground bg-accent rounded-lg px-4 py-1 border"
                       >
                         Try Live →
                       </Link>
@@ -225,7 +225,7 @@ export default function ComponentsPage() {
                           key={tech}
                           className="flex items-center gap-1.5
                             text-[10px] sm:text-xs bg-accent hover:bg-accent/40
-                            rounded-sm px-2 py-1 text-muted-foreground ring-1 ring-offset-2 ring-foreground/20 ring-offset-background"
+                            rounded-sm px-2 py-1 text-muted-foreground hover:text-foreground ring-1 ring-offset-2 ring-foreground/20 ring-offset-background"
                         >
                           {TechIcon && <TechIcon className="h-3 w-3" />}
                           {tech}
