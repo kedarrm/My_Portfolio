@@ -159,7 +159,7 @@ export default function ComponentsPage() {
                     rounded-sm text-xs sm:text-sm transition cursor-pointer hover:text-foreground
                     ring-1 ring-offset-2 ring-foreground/20 ring-offset-background
                     ${activeCategory === category
-                      ? "bg-foreground/50 text-background"
+                      ? "bg-foreground/50 text-foreground"
                       : "bg-background text-muted-foreground hover:bg-muted"
                     }`}
                 >

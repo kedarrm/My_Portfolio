@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Briefcase, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import {
     SiNextdotjs,
     SiReact,
@@ -161,7 +161,7 @@ export default function ExperienceTimeline() {
                   rounded-md 
                   px-2.5 py-1
                   text-xs text-muted-foreground
-                  bg-background
+                  bg-background hover:text-foreground
                   hover:bg-muted
                   transition
                   ring-1 ring-offset-2 ring-foreground/20 ring-offset-background
