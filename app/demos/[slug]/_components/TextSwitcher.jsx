@@ -18,7 +18,7 @@ const TextSwitcher = () => {
     return (
         <div className='flex justify-center items-center h-screen'>
 
-            <div className='bg-foreground/10 p-3 w-84 rounded-xl'>
+            <div className='bg-foreground/10 p-3 64 sm:w-84 rounded-xl'>
                 <p className='bg-foreground/20 p-4 rounded-xl text-muted-accent/40 shadow-xl'>
                     Craft{' '}
                     <AnimatePresence mode="wait">
