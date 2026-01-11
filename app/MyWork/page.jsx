@@ -24,6 +24,7 @@ import {
 } from "lucide-react";
 import PageLoader from "@/components/Loader";
 import Badge from "../demos/[slug]/_components/Badge";
+import TextSwitcher from "../demos/[slug]/_components/TextSwitcher";
 
 
 const categories = [
@@ -102,6 +103,14 @@ const componentsData = [
     tech: ["React", "Tailwind"],
     slug: "badge",
   },
+  {
+    id: 7,
+    name: "Animated Text Rotator",
+    category: "Text",
+    description: "Minimilistic Badge with React and Tailwind CSS.",
+    tech: ["React", "Tailwind"," Framer Motion"],
+    slug: "animated-text",
+  }
 ];
 
 const previewMap = {
@@ -111,6 +120,8 @@ const previewMap = {
   "Animated Text": <AnimatedText />,
   "Directional Toolbar": <Toolbar />,
   "Badge": <Badge />,
+  "Animated Text Rotator": <TextSwitcher />
+
 };
 
 
@@ -196,10 +207,10 @@ export default function ComponentsPage() {
                       {previewMap[component.name]}
                     </div>
 
-                    <div className="absolute inset-0 bg-background/80 backdrop-blur opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                    <div className="absolute inset-0 bg-background/50 backdrop-blur opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
                       <Link
                         href={`/demos/${component.slug}`}
-                        className="text-xs text-foreground bg-accent rounded-lg px-4 py-1 border"
+                        className="text-xs text-foreground bg-accent rounded-lg px-4 py-1 border border-background"
                       >
                         Try Live →
                       </Link>

@@ -113,10 +113,8 @@ export default function ExperienceTimeline() {
                         </div>
                     </div>
 
-
-
                     <p className="mt-1 text-sm text-muted-foreground">
-                       Freelance Client Project · Farmers Choice (Agriculture Products Platform)
+                       Freelance Project · Farmers Choice (Agriculture Products Platform)
                     </p>
 
                     {/* Responsibilities */}

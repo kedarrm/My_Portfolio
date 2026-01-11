@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <nav
         className="
-          fixed top-0 right-2 sm:right-6 md:right-10
+          fixed top-0 right-5 sm:right-6 md:right-10
           z-50
           bg-background/80 backdrop-blur
         "

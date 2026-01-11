@@ -8,6 +8,8 @@ import AnimatedText from "./_components/Text";
 import DescriptionSection from "@/app/MyWork/_components/Description";
 import DemoClient from "./DemoClient";
 import Badge from "./_components/Badge";
+import NewComp from "./_components/TextSwitcher";
+import TextSwitcher from "./_components/TextSwitcher";
 
 
 const demos = [
@@ -167,7 +169,44 @@ const demos = [
       "Tailwind CSS",
     ],
   },
-}
+},
+{
+  slug: "animated-text",
+  name: "Animated Text Rotator",
+  description:
+    "A smooth, motion-driven text rotation component for highlighting key words or phrases in headings and hero sections.",
+  code: "https://github.com/yourname/animated-text-rotator",
+  component: TextSwitcher,
+  details: {
+    overview:
+      "A modern animated text component built with React and Framer Motion. It cycles through a predefined set of words using elegant enter and exit animations, adding visual interest and emphasis to headlines without overwhelming the UI.",
+    useCases: [
+      "Hero section headlines",
+      "Marketing landing pages",
+      "Product highlight messaging",
+      "Portfolio intros",
+      "Call-to-action emphasis",
+    ],
+    whyUse: [
+      "Smooth, polished animations with Framer Motion",
+      "Zero external state management",
+      "Minimal and readable component structure",
+      "Easy word customization",
+      "Perfect for modern, animated UIs",
+    ],
+    variants: [
+      "Static text with animated keywords",
+      "Custom animation timing",
+      "Vertical or fade-only transitions",
+      "Theme-adapted (light / dark)",
+    ],
+    tech: [
+      "React",
+      "Framer Motion",
+      "Tailwind CSS",
+    ],
+  },
+},
 
 ];
 
@@ -202,7 +241,7 @@ export default async function DemoPage({ params }) {
 
         <main className="max-w-3xl mx-auto">
           <div className="
-          h-96 rounded-lg bg-muted/50
+          h-96 rounded-lg bg-muted/70
           flex items-center justify-center
           mb-6 
         ">
@@ -228,7 +267,7 @@ export default async function DemoPage({ params }) {
 
             <Link
               href="/MyWork"
-              className="text-sm font-medium text-muted-foreground hover:underline"
+              className="text-md font-medium text-muted-foreground hover:text-foreground transition"
             >
               Back to Components
             </Link>

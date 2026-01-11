@@ -66,7 +66,7 @@ export default function RippleEffect() {
     return (
         <Ripple
             rippleColor="rgba(59,130,246,0.35)"
-            className="inline-flex items-center justify-center bg-accent rounded-lg shadow-md hover:shadow-2xl transition cursor-pointer"
+            className="inline-flex items-center justify-center shadow-md hover:shadow-xl transition cursor-pointer"
         >
             <Image
                 src="/comet.png"
