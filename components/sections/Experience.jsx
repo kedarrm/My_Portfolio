@@ -61,7 +61,7 @@ export default function ExperienceTimeline() {
                                 onMouseEnter={() => setShowPreview(true)}
                                 onMouseLeave={() => setShowPreview(false)}
                             >
-                                <h2 className="text-md font-bold sm:text-xl sm:font-extrabold cursor-pointer">
+                                <h2 className="text-md font-bold sm:text-xl sm:font-extrabold cursor-pointer sm:mt-0 -mt-4">
                                     Full Stack Developer
                                 </h2>
 
@@ -97,17 +97,16 @@ export default function ExperienceTimeline() {
                         </div>
 
                         <div className="flex flex-col gap-0">
-                            <span className="text-xs text-muted-foreground">
+                            <span className="hidden sm:block text-xs text-muted-foreground">
                                 Jul 2025 – Nov 2025
-
                             </span>
                             <a
                                 href="https://www.farmerschoice.in/index.html"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-muted-foreground hover:text-foreground transition"
+                                className="-mt-5 pl-12 sm:pl-0 sm:mt-3 inline-flex items-center gap-1.5 text-[10px] sm:text-xs font-medium text-muted-foreground hover:text-foreground transition"
                             >
-                                View Live Project
+                                View Live Demo
                                 <ExternalLink className="h-3.5 w-3.5 text-green-500" />
                             </a>
                         </div>

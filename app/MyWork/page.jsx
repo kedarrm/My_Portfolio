@@ -158,7 +158,7 @@ export default function ComponentsPage() {
 
 
         <div className="max-w-7xl mx-auto px-4 sm:px-8 mb-8">
-          <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide px-2">
+          <div className="flex gap-3.5 overflow-x-auto pb-2 scrollbar-hide px-2">
             {categories.map((category) => {
               const Icon = categoryIcons[category];
 
