@@ -21,10 +21,12 @@ import {
   Atom,
   Cpu,
   BadgeAlert,
+  Loader,
 } from "lucide-react";
 import PageLoader from "@/components/Loader";
 import Badge from "../demos/[slug]/_components/Badge";
 import TextSwitcher from "../demos/[slug]/_components/TextSwitcher";
+import VerticalSkeletonLoader from "../demos/[slug]/_components/Loader";
 
 
 const categories = [
@@ -35,6 +37,7 @@ const categories = [
   "Text",
   "Toolbar",
   "Badge",
+  "Loader",
 ];
 
 const categoryIcons = {
@@ -45,6 +48,7 @@ const categoryIcons = {
   Text: Type,
   Toolbar: LayoutGrid,
   Badge: BadgeAlert,
+  Loader: Loader,
 };
 
 const techIcons = {
@@ -110,6 +114,14 @@ const componentsData = [
     description: "Minimilistic Badge with React and Tailwind CSS.",
     tech: ["React", "Tailwind"," Framer Motion"],
     slug: "animated-text",
+  },
+   {
+    id: 8,
+    name: "Vertical Skeleton Loader",
+    category: "Loader",
+    description: "Animated vertical loader with React and Tailwind CSS.",
+    tech: ["React", "Tailwind"," Framer Motion"],
+    slug: "Loader",
   }
 ];
 
@@ -120,7 +132,8 @@ const previewMap = {
   "Animated Text": <AnimatedText />,
   "Directional Toolbar": <Toolbar />,
   "Badge": <Badge />,
-  "Animated Text Rotator": <TextSwitcher />
+  "Animated Text Rotator": <TextSwitcher />,
+  "Vertical Skeleton Loader": <VerticalSkeletonLoader />,
 
 };
 

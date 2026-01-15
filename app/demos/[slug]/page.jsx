@@ -10,6 +10,7 @@ import DemoClient from "./DemoClient";
 import Badge from "./_components/Badge";
 import NewComp from "./_components/TextSwitcher";
 import TextSwitcher from "./_components/TextSwitcher";
+import VerticalSkeletonLoader from "./_components/Loader";
 
 
 const demos = [
@@ -199,6 +200,43 @@ const demos = [
       "Custom animation timing",
       "Vertical or fade-only transitions",
       "Theme-adapted (light / dark)",
+    ],
+    tech: [
+      "React",
+      "Framer Motion",
+      "Tailwind CSS",
+    ],
+  },
+},
+{
+  slug: "Loader",
+  name: "Vertical Skeleton Loader",
+  description:
+    "A vertical, animated skeleton loader for list-based layouts that simulates content loading with smooth motion and depth.",
+  code: "https://github.com/yourname/vertical-skeleton-loader",
+  component: VerticalSkeletonLoader,
+  details: {
+    overview:
+      "A sleek skeleton loading component designed for vertical lists such as feeds, menus, or cards. Built with Framer Motion and Tailwind CSS, it animates rows from top to bottom with subtle opacity and movement, enhanced by gradient fades for a premium loading experience.",
+    useCases: [
+      "Feed and list loading states",
+      "Sidebar or menu placeholders",
+      "Dashboard content loading",
+      "Search result skeletons",
+      "Mobile-style list loaders",
+    ],
+    whyUse: [
+      "Visually communicates loading progress",
+      "Smooth infinite animation loop",
+      "Elegant top and bottom fade masking",
+      "No layout shift when content loads",
+      "Highly reusable across list-based UIs",
+    ],
+    variants: [
+      "Adjustable row count",
+      "Horizontal skeleton layout",
+      "Avatar-only loader",
+      "Shimmer-enhanced skeleton",
     ],
     tech: [
       "React",
