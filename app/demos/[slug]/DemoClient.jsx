@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import PageLoader from "@/components/Loader";
+import PageLoader from "@/components/PageLoader";
 
 export default function DemoClient({ children }) {
   const [loading, setLoading] = useState(true);

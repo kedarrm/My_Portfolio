@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import PageLoader from './Loader';
+import PageLoader from './PageLoader';
 
 export default function FrameBox({ children }) {
   const [loading, setLoading] = useState(true)

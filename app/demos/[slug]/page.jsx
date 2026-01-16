@@ -283,7 +283,7 @@ export default async function DemoPage({ params }) {
           flex items-center justify-center
           mb-6 
         ">
-            {PreviewComponent ? (
+          {PreviewComponent ? (
               <PreviewComponent />
             ) : (
               <p className="text-sm text-muted-foreground">

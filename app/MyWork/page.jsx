@@ -23,7 +23,7 @@ import {
   BadgeAlert,
   Loader,
 } from "lucide-react";
-import PageLoader from "@/components/Loader";
+import PageLoader from "@/components/PageLoader";
 import Badge from "../demos/[slug]/_components/Badge";
 import TextSwitcher from "../demos/[slug]/_components/TextSwitcher";
 import VerticalSkeletonLoader from "../demos/[slug]/_components/Loader";
