@@ -8,7 +8,7 @@ const GridLayout = () => {
     <motion.div
       className="
         relative h-72 w-full overflow-auto
-        rounded-lg
+        rounded-lg 
         m-4 mask-b-from-1
       "
       initial={{ opacity: 0, filter: "blur(24px)" }}
