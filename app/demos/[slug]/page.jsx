@@ -11,6 +11,7 @@ import Badge from "./_components/Badge";
 import NewComp from "./_components/TextSwitcher";
 import TextSwitcher from "./_components/TextSwitcher";
 import VerticalSkeletonLoader from "./_components/Loader";
+import GridLayout from "./_components/Grid";
 
 
 const demos = [
@@ -245,7 +246,43 @@ const demos = [
     ],
   },
 },
-
+{
+  slug: "Grid",
+  name: "Masonry Grid",
+  description:
+    "A responsive masonry-style grid layout for displaying uneven content blocks with smooth entry animation.",
+  code: "https://github.com/yourname/masonry-grid-layout",
+  component: GridLayout,
+  details: {
+    overview:
+      "A clean and modern masonry grid layout inspired by brick-wall and Pinterest-style designs. It arranges items into multiple columns with varying heights, minimizing vertical gaps and creating a natural, staggered flow. A subtle blur-to-sharp animation enhances the initial render for a polished visual experience.",
+    useCases: [
+      "Image galleries",
+      "Portfolio showcases",
+      "Blog card layouts",
+      "Pinterest-style feeds",
+      "Content-heavy landing sections",
+    ],
+    whyUse: [
+      "Visually appealing staggered layout",
+      "No complex grid calculations required",
+      "Smooth entrance animation",
+      "Lightweight and easy to customize",
+      "Works well with variable-height content",
+    ],
+    variants: [
+      "Configurable column count",
+      "Responsive breakpoints (2 / 3 / 4 columns)",
+      "Card-based masonry items",
+      "Animated hover states",
+    ],
+    tech: [
+      "React",
+      "Framer Motion",
+      "Tailwind CSS",
+    ],
+  },
+}
 ];
 
 

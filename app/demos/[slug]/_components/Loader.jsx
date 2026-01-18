@@ -17,7 +17,7 @@ export default function VerticalSkeletonLoader() {
               initial={{ y: 48, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{
-                duration: 0.45,
+                duration: 0.85,
                 delay: i * 0.15,
                 repeat: Infinity,
                 repeatDelay: 0.6,

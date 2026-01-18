@@ -22,11 +22,13 @@ import {
   Cpu,
   BadgeAlert,
   Loader,
+  Grid,
 } from "lucide-react";
 import PageLoader from "@/components/PageLoader";
 import Badge from "../demos/[slug]/_components/Badge";
 import TextSwitcher from "../demos/[slug]/_components/TextSwitcher";
 import VerticalSkeletonLoader from "../demos/[slug]/_components/Loader";
+import GridLayout from "../demos/[slug]/_components/Grid";
 
 
 const categories = [
@@ -38,6 +40,7 @@ const categories = [
   "Toolbar",
   "Badge",
   "Loader",
+  "Grid",
 ];
 
 const categoryIcons = {
@@ -49,6 +52,7 @@ const categoryIcons = {
   Toolbar: LayoutGrid,
   Badge: BadgeAlert,
   Loader: Loader,
+  Grid: Grid,
 };
 
 const techIcons = {
@@ -122,6 +126,14 @@ const componentsData = [
     description: "Animated vertical loader with React and Tailwind CSS.",
     tech: ["React", "Tailwind"," Framer Motion"],
     slug: "Loader",
+  },
+  {
+    id: 9,
+    name: "Masonry Grid",
+    category: "Grid",
+    description: "Masonry Grid using React, Tailwind and Framer motion.",
+    tech: ["React", "Tailwind"," Framer Motion"],
+    slug: "Grid",
   }
 ];
 
@@ -134,6 +146,7 @@ const previewMap = {
   "Badge": <Badge />,
   "Animated Text Rotator": <TextSwitcher />,
   "Vertical Skeleton Loader": <VerticalSkeletonLoader />,
+  "Masonry Grid":<GridLayout />
 
 };
 

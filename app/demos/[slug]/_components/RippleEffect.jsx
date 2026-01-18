@@ -75,7 +75,6 @@ export default function RippleEffect() {
                 height={150}
                 className="rounded-sm grayscale hover:grayscale-0 transition"
             />
-           
         </Ripple>
     );
 }
