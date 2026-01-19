@@ -204,8 +204,8 @@ const demos = [
     ],
     tech: [
       "React",
-      "Framer Motion",
       "Tailwind CSS",
+      "Framer Motion",
     ],
   },
 },
@@ -241,8 +241,8 @@ const demos = [
     ],
     tech: [
       "React",
-      "Framer Motion",
       "Tailwind CSS",
+      "Framer Motion",
     ],
   },
 },
@@ -278,8 +278,8 @@ const demos = [
     ],
     tech: [
       "React",
-      "Framer Motion",
       "Tailwind CSS",
+      "Framer Motion",
     ],
   },
 }

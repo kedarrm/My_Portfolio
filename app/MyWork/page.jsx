@@ -9,26 +9,16 @@ import Menu from "../demos/[slug]/_components/ExpandingMenu";
 import Toolbar from "../demos/[slug]/_components/Toolbar";
 import AnimatedText from "../demos/[slug]/_components/Text";
 import {
-  Github,
-  Linkedin,
-  Mail,
-  LayoutGrid,
-  Sparkles,
-  Navigation,
-  Type,
-  PanelTop,
-  Wind,
-  Atom,
-  Cpu,
-  BadgeAlert,
-  Loader,
-  Grid,
+  Github, Linkedin, Mail, LayoutGrid, Sparkles, Navigation, Type, PanelTop, Wind, Atom, Cpu, BadgeAlert,
+  Loader, Grid
 } from "lucide-react";
 import PageLoader from "@/components/PageLoader";
 import Badge from "../demos/[slug]/_components/Badge";
 import TextSwitcher from "../demos/[slug]/_components/TextSwitcher";
 import VerticalSkeletonLoader from "../demos/[slug]/_components/Loader";
 import GridLayout from "../demos/[slug]/_components/Grid";
+import { SiCss3, SiTailwindcss } from "react-icons/si";
+import { TbBrandFramerMotion } from "react-icons/tb";
 
 
 const categories = [
@@ -57,9 +47,9 @@ const categoryIcons = {
 
 const techIcons = {
   React: Atom,
-  Tailwind: Wind,
-  "Framer Motion": Cpu,
-  CSS: Sparkles,
+  Tailwind: SiTailwindcss,
+  "Framer Motion": TbBrandFramerMotion,
+  CSS: SiCss3,
 };
 
 const componentsData = [
@@ -116,15 +106,15 @@ const componentsData = [
     name: "Animated Text Rotator",
     category: "Text",
     description: "Minimilistic Badge with React and Tailwind CSS.",
-    tech: ["React", "Tailwind"," Framer Motion"],
+    tech: ["React", "Tailwind", "Framer Motion"],
     slug: "animated-text",
   },
-   {
+  {
     id: 8,
     name: "Vertical Skeleton Loader",
     category: "Loader",
     description: "Animated vertical loader with React and Tailwind CSS.",
-    tech: ["React", "Tailwind"," Framer Motion"],
+    tech: ["React", "Tailwind", "Framer Motion"],
     slug: "Loader",
   },
   {
@@ -132,7 +122,7 @@ const componentsData = [
     name: "Masonry Grid",
     category: "Grid",
     description: "Masonry Grid using React, Tailwind and Framer motion.",
-    tech: ["React", "Tailwind"," Framer Motion"],
+    tech: ["React", "Tailwind", "Framer Motion"],
     slug: "Grid",
   }
 ];
@@ -146,7 +136,7 @@ const previewMap = {
   "Badge": <Badge />,
   "Animated Text Rotator": <TextSwitcher />,
   "Vertical Skeleton Loader": <VerticalSkeletonLoader />,
-  "Masonry Grid":<GridLayout />
+  "Masonry Grid": <GridLayout />,
 
 };
 

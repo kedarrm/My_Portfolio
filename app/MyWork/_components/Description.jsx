@@ -11,13 +11,15 @@ import {
   Layers,
   Wind,
 } from "lucide-react";
+import { SiTailwindcss } from "react-icons/si";
+import { TbBrandFramerMotion } from "react-icons/tb";
 
 
 const techIcons = {
   "React": Atom,
   "Next.js": Layers,
-  "Framer Motion": Cpu,
-  "Tailwind CSS": Wind,
+  "Framer Motion": TbBrandFramerMotion,
+  "Tailwind CSS": SiTailwindcss,
   "Lucide Icons": Sparkles,
 };
 

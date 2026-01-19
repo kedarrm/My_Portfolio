@@ -18,7 +18,6 @@ const skills = [
   { name: "Python", icon: SiPython },
   { name: "Django", icon: SiDjango },
   { name: "PostgreSQL", icon: SiPostgresql },
-
 ];
 
 export default function SkillIcons() {
