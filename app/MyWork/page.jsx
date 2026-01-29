@@ -9,7 +9,7 @@ import Menu from "../demos/[slug]/_components/ExpandingMenu";
 import Toolbar from "../demos/[slug]/_components/Toolbar";
 import AnimatedText from "../demos/[slug]/_components/Text";
 import {
-  Github, Linkedin, Mail, LayoutGrid, Sparkles, Navigation, Type, PanelTop, Wind, Atom, Cpu, BadgeAlert,
+  Github, Linkedin, Mail, LayoutGrid, Sparkles, Navigation, Type, PanelTop, Atom, BadgeAlert,
   Loader, Grid
 } from "lucide-react";
 import PageLoader from "@/components/PageLoader";
