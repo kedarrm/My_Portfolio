@@ -10,7 +10,8 @@ import Toolbar from "../demos/[slug]/_components/Toolbar";
 import AnimatedText from "../demos/[slug]/_components/Text";
 import {
   Github, Linkedin, Mail, LayoutGrid, Sparkles, Navigation, Type, PanelTop, Atom, BadgeAlert,
-  Loader, Grid
+  Loader, Grid,
+  TypeIcon
 } from "lucide-react";
 import PageLoader from "@/components/PageLoader";
 import Badge from "../demos/[slug]/_components/Badge";
@@ -19,6 +20,9 @@ import VerticalSkeletonLoader from "../demos/[slug]/_components/Loader";
 import GridLayout from "../demos/[slug]/_components/Grid";
 import { SiCss3, SiTailwindcss } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
+import Breadcrumb from "../demos/[slug]/_components/Breadcrums";
+import { FaBreadSlice } from "react-icons/fa";
+import { PiBreadFill } from "react-icons/pi";
 
 
 const categories = [
@@ -31,6 +35,7 @@ const categories = [
   "Badge",
   "Loader",
   "Grid",
+  "Breadcrumb"
 ];
 
 const categoryIcons = {
@@ -43,6 +48,7 @@ const categoryIcons = {
   Badge: BadgeAlert,
   Loader: Loader,
   Grid: Grid,
+  Breadcrumb: PiBreadFill
 };
 
 const techIcons = {
@@ -124,6 +130,14 @@ const componentsData = [
     description: "Masonry Grid using React, Tailwind and Framer motion.",
     tech: ["React", "Tailwind", "Framer Motion"],
     slug: "Grid",
+  },
+  {
+    id: 10,
+    name: "Breadcrumb",
+    category: "Breadcrumb",
+    description: "Breadcrumb with using React, Tailwind and Framer motion.",
+    tech: ["React", "Tailwind", "Framer Motion"],
+    slug: "Breadcrumb",
   }
 ];
 
@@ -137,6 +151,7 @@ const previewMap = {
   "Animated Text Rotator": <TextSwitcher />,
   "Vertical Skeleton Loader": <VerticalSkeletonLoader />,
   "Masonry Grid": <GridLayout />,
+  "Breadcrumb": <Breadcrumb />,
 
 };
 
@@ -186,7 +201,7 @@ export default function ComponentsPage() {
                     rounded-sm text-xs sm:text-sm transition cursor-pointer hover:text-foreground
                     ring-1 ring-offset-2 ring-foreground/20 ring-offset-background
                     ${activeCategory === category
-                      ? "bg-foreground/50 text-foreground"
+                      ? "bg-foreground/10 text-foreground"
                       : "bg-background text-muted-foreground hover:bg-muted"
                     }`}
                 >

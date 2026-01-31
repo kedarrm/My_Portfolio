@@ -12,6 +12,7 @@ import NewComp from "./_components/TextSwitcher";
 import TextSwitcher from "./_components/TextSwitcher";
 import VerticalSkeletonLoader from "./_components/Loader";
 import GridLayout from "./_components/Grid";
+import Breadcrumb from "./_components/Breadcrums";
 
 
 const demos = [
@@ -282,7 +283,49 @@ const demos = [
       "Framer Motion",
     ],
   },
-}
+},
+
+{
+  slug: "Breadcrumb",
+  name: "Animated Breadcrumb Navigation",
+  description:
+    "A motion-enhanced breadcrumb navigation component with icon support and an animated active-state indicator.",
+  code: "https://github.com/yourname/animated-breadcrumb",
+  component: Breadcrumb,
+  details: {
+    overview:
+      "A modern breadcrumb navigation component designed for Next.js App Router. It highlights the active route using a smooth, shared-layout animated underline while providing subtle hover and tap interactions for inactive items. Icon support improves visual clarity and scanability across navigation paths.",
+    useCases: [
+      "Dashboard navigation",
+      "Documentation hierarchies",
+      "Multi-level UI sections",
+      "Portfolio and project pages",
+      "App router–based layouts",
+    ],
+    whyUse: [
+      "Animated active indicator using shared layout",
+      "Built for Next.js App Router",
+      "Icon-enhanced readability",
+      "Subtle micro-interactions on hover and tap",
+      "Accessible and SEO-friendly markup",
+    ],
+    variants: [
+      "Dynamic breadcrumb generation from route segments",
+      "Icon-only breadcrumb mode",
+      "Compact mobile variant",
+      "Custom separators (slash / dot / arrow)",
+    ],
+    tech: [
+      "Next.js",
+      "React",
+      "Framer Motion",
+      "Tailwind CSS",
+      "Lucide Icons",
+    ],
+  },
+},
+
+
 ];
 
 
