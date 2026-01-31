@@ -287,7 +287,7 @@ const demos = [
 
 {
   slug: "Breadcrumb",
-  name: "Animated Breadcrumb Navigation",
+  name: "Breadcrumb Navigation",
   description:
     "A motion-enhanced breadcrumb navigation component with icon support and an animated active-state indicator.",
   code: "https://github.com/yourname/animated-breadcrumb",
