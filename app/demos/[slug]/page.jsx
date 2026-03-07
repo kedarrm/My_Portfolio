@@ -323,11 +323,9 @@ const demos = [
       ],
 
       tech: [
-        "Next.js",
         "React",
         "Framer Motion",
         "Tailwind CSS",
-        "Lucide Icons",
       ],
     },
   },

@@ -18,7 +18,7 @@ function MasonryGrid() {
       <motion.div
       className="
         relative h-82 w-full overflow-auto
-        rounded-lg m-2 mask-b-from-1"
+        rounded-lg m-2 mask-b-from-60"
       initial={{ opacity: 0, filter: "blur(24px)" }}
       animate={{ opacity: 1, filter: "blur(0px)" }}
       transition={{ duration: 0.8, ease: "easeOut" }}
