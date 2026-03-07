@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { ChevronRight, Contact2, File, Home, User } from "lucide-react";
 
-const BREADCRUMBS = [
+const Breadcrumbs = [
     { label: "Home", href: "/", icon: Home },
     { label: "Projects", href: "/projects", icon: File },
     { label: "Contact", href: "/ui", icon: Contact2 },
@@ -18,10 +18,10 @@ export default function Breadcrumb() {
     return (
         <nav aria-label="Breadcrumb">
             <ol className="flex items-center sm:gap-2 gap-1 sm:text-sm text-xs text-muted-foreground">
-                {BREADCRUMBS.map((item, index) => {
+                {Breadcrumbs.map((item, index) => {
                     const isActive =
                         pathname === item.href ||
-                        index === BREADCRUMBS.length - 1;
+                        index === Breadcrumbs.length - 1;
 
                     return (
                         <li
