@@ -13,6 +13,7 @@ import TextSwitcher from "./_components/TextSwitcher";
 import VerticalSkeletonLoader from "./_components/Loader";
 import GridLayout from "./_components/Grid";
 import Breadcrumb from "./_components/Breadcrums";
+import ImageGrid from "./_components/ImageGrid";
 
 
 const demos = [
@@ -138,193 +139,198 @@ const demos = [
     }
   },
   {
-  slug: "badge",
-  name: "Badge Component",
-  description:
-    "A lightweight, theme-aware badge component for labels, tags, and status indicators with full light and dark mode support.",
-  code: "https://github.com/yourname/badge-component",
-  component: Badge,
-  details: {
-    overview:
-      "A minimal yet polished badge component designed for modern UIs. It automatically adapts to light and dark themes using Tailwind CSS, providing consistent contrast, subtle depth, and a clean pill-shaped design.",
-    useCases: [
-      "Skill tags in portfolios",
-      "Status indicators (Active, Beta, New)",
-      "Category labels",
-      "Feature highlights",
-      "Metadata chips",
-    ],
-    whyUse: [
-      "Theme-aware out of the box (light & dark)",
-      "No JavaScript required",
-      "Consistent design system friendly",
-      "Accessible contrast and spacing",
-      "Easy to reuse across projects",
-    ],
-    variants: [
-      "Default",
-      "With icon",
-      "Status badge (success / warning / error)",
-      "Clickable tag",
-    ],
-    tech: [
-      "React",
-      "Tailwind CSS",
-    ],
+    slug: "badge",
+    name: "Badge Component",
+    description:
+      "A lightweight, theme-aware badge component for labels, tags, and status indicators with full light and dark mode support.",
+    code: "https://github.com/yourname/badge-component",
+    component: Badge,
+    details: {
+      overview:
+        "A minimal yet polished badge component designed for modern UIs. It automatically adapts to light and dark themes using Tailwind CSS, providing consistent contrast, subtle depth, and a clean pill-shaped design.",
+      useCases: [
+        "Skill tags in portfolios",
+        "Status indicators (Active, Beta, New)",
+        "Category labels",
+        "Feature highlights",
+        "Metadata chips",
+      ],
+      whyUse: [
+        "Theme-aware out of the box (light & dark)",
+        "No JavaScript required",
+        "Consistent design system friendly",
+        "Accessible contrast and spacing",
+        "Easy to reuse across projects",
+      ],
+      tech: [
+        "React",
+        "Tailwind CSS",
+      ],
+    },
   },
-},
-{
-  slug: "animated-text",
-  name: "Animated Text Rotator",
-  description:
-    "A smooth, motion-driven text rotation component for highlighting key words or phrases in headings and hero sections.",
-  code: "https://github.com/yourname/animated-text-rotator",
-  component: TextSwitcher,
-  details: {
-    overview:
-      "A modern animated text component built with React and Framer Motion. It cycles through a predefined set of words using elegant enter and exit animations, adding visual interest and emphasis to headlines without overwhelming the UI.",
-    useCases: [
-      "Hero section headlines",
-      "Marketing landing pages",
-      "Product highlight messaging",
-      "Portfolio intros",
-      "Call-to-action emphasis",
-    ],
-    whyUse: [
-      "Smooth, polished animations with Framer Motion",
-      "Zero external state management",
-      "Minimal and readable component structure",
-      "Easy word customization",
-      "Perfect for modern, animated UIs",
-    ],
-    variants: [
-      "Static text with animated keywords",
-      "Custom animation timing",
-      "Vertical or fade-only transitions",
-      "Theme-adapted (light / dark)",
-    ],
-    tech: [
-      "React",
-      "Tailwind CSS",
-      "Framer Motion",
-    ],
+  {
+    slug: "animated-text",
+    name: "Animated Text Rotator",
+    description:
+      "A smooth, motion-driven text rotation component for highlighting key words or phrases in headings and hero sections.",
+    code: "https://github.com/yourname/animated-text-rotator",
+    component: TextSwitcher,
+    details: {
+      overview:
+        "A modern animated text component built with React and Framer Motion. It cycles through a predefined set of words using elegant enter and exit animations, adding visual interest and emphasis to headlines without overwhelming the UI.",
+      useCases: [
+        "Hero section headlines",
+        "Marketing landing pages",
+        "Product highlight messaging",
+        "Portfolio intros",
+        "Call-to-action emphasis",
+      ],
+      whyUse: [
+        "Smooth, polished animations with Framer Motion",
+        "Zero external state management",
+        "Minimal and readable component structure",
+        "Easy word customization",
+        "Perfect for modern, animated UIs",
+      ],
+      tech: [
+        "React",
+        "Tailwind CSS",
+        "Framer Motion",
+      ],
+    },
   },
-},
-{
-  slug: "Loader",
-  name: "Vertical Skeleton Loader",
-  description:
-    "A vertical, animated skeleton loader for list-based layouts that simulates content loading with smooth motion and depth.",
-  code: "https://github.com/yourname/vertical-skeleton-loader",
-  component: VerticalSkeletonLoader,
-  details: {
-    overview:
-      "A sleek skeleton loading component designed for vertical lists such as feeds, menus, or cards. Built with Framer Motion and Tailwind CSS, it animates rows from top to bottom with subtle opacity and movement, enhanced by gradient fades for a premium loading experience.",
-    useCases: [
-      "Feed and list loading states",
-      "Sidebar or menu placeholders",
-      "Dashboard content loading",
-      "Search result skeletons",
-      "Mobile-style list loaders",
-    ],
-    whyUse: [
-      "Visually communicates loading progress",
-      "Smooth infinite animation loop",
-      "Elegant top and bottom fade masking",
-      "No layout shift when content loads",
-      "Highly reusable across list-based UIs",
-    ],
-    variants: [
-      "Adjustable row count",
-      "Horizontal skeleton layout",
-      "Avatar-only loader",
-      "Shimmer-enhanced skeleton",
-    ],
-    tech: [
-      "React",
-      "Tailwind CSS",
-      "Framer Motion",
-    ],
+  {
+    slug: "Loader",
+    name: "Vertical Skeleton Loader",
+    description:
+      "A vertical, animated skeleton loader for list-based layouts that simulates content loading with smooth motion and depth.",
+    code: "https://github.com/yourname/vertical-skeleton-loader",
+    component: VerticalSkeletonLoader,
+    details: {
+      overview:
+        "A sleek skeleton loading component designed for vertical lists such as feeds, menus, or cards. Built with Framer Motion and Tailwind CSS, it animates rows from top to bottom with subtle opacity and movement, enhanced by gradient fades for a premium loading experience.",
+      useCases: [
+        "Feed and list loading states",
+        "Sidebar or menu placeholders",
+        "Dashboard content loading",
+        "Search result skeletons",
+        "Mobile-style list loaders",
+      ],
+      whyUse: [
+        "Visually communicates loading progress",
+        "Smooth infinite animation loop",
+        "Elegant top and bottom fade masking",
+        "No layout shift when content loads",
+        "Highly reusable across list-based UIs",
+      ],
+      tech: [
+        "React",
+        "Tailwind CSS",
+        "Framer Motion",
+      ],
+    },
   },
-},
-{
-  slug: "Grid",
-  name: "Masonry Grid",
-  description:
-    "A responsive masonry-style grid layout for displaying uneven content blocks with smooth entry animation.",
-  code: "https://github.com/yourname/masonry-grid-layout",
-  component: GridLayout,
-  details: {
-    overview:
-      "A clean and modern masonry grid layout inspired by brick-wall and Pinterest-style designs. It arranges items into multiple columns with varying heights, minimizing vertical gaps and creating a natural, staggered flow. A subtle blur-to-sharp animation enhances the initial render for a polished visual experience.",
-    useCases: [
-      "Image galleries",
-      "Portfolio showcases",
-      "Blog card layouts",
-      "Pinterest-style feeds",
-      "Content-heavy landing sections",
-    ],
-    whyUse: [
-      "Visually appealing staggered layout",
-      "No complex grid calculations required",
-      "Smooth entrance animation",
-      "Lightweight and easy to customize",
-      "Works well with variable-height content",
-    ],
-    variants: [
-      "Configurable column count",
-      "Responsive breakpoints (2 / 3 / 4 columns)",
-      "Card-based masonry items",
-      "Animated hover states",
-    ],
-    tech: [
-      "React",
-      "Tailwind CSS",
-      "Framer Motion",
-    ],
-  },
-},
+  {
+    slug: "Grid",
+    name: "Masonry Grid",
+    description:
+      "A responsive masonry-style grid layout for displaying uneven content blocks with smooth entry animation.",
+    code: "https://github.com/yourname/masonry-grid-layout",
+    component: GridLayout,
+    details: {
+      overview:
+        "A clean and modern masonry grid layout inspired by brick-wall and Pinterest-style designs. It arranges items into multiple columns with varying heights, minimizing vertical gaps and creating a natural, staggered flow. A subtle blur-to-sharp animation enhances the initial render for a polished visual experience.",
+      useCases: [
+        "Image galleries",
+        "Portfolio showcases",
+        "Blog card layouts",
+        "Pinterest-style feeds",
+        "Content-heavy landing sections",
+      ],
+      whyUse: [
+        "Visually appealing staggered layout",
+        "No complex grid calculations required",
+        "Smooth entrance animation",
+        "Lightweight and easy to customize",
+        "Works well with variable-height content",
+      ],
 
-{
-  slug: "Breadcrumb",
-  name: "Breadcrumb Navigation",
-  description:
-    "A motion-enhanced breadcrumb navigation component with icon support and an animated active-state indicator.",
-  code: "https://github.com/yourname/animated-breadcrumb",
-  component: Breadcrumb,
-  details: {
-    overview:
-      "A modern breadcrumb navigation component designed for Next.js App Router. It highlights the active route using a smooth, shared-layout animated underline while providing subtle hover and tap interactions for inactive items. Icon support improves visual clarity and scanability across navigation paths.",
-    useCases: [
-      "Dashboard navigation",
-      "Documentation hierarchies",
-      "Multi-level UI sections",
-      "Portfolio and project pages",
-      "App router–based layouts",
-    ],
-    whyUse: [
-      "Animated active indicator using shared layout",
-      "Built for Next.js App Router",
-      "Icon-enhanced readability",
-      "Subtle micro-interactions on hover and tap",
-      "Accessible and SEO-friendly markup",
-    ],
-    variants: [
-      "Dynamic breadcrumb generation from route segments",
-      "Icon-only breadcrumb mode",
-      "Compact mobile variant",
-      "Custom separators (slash / dot / arrow)",
-    ],
-    tech: [
-      "Next.js",
-      "React",
-      "Framer Motion",
-      "Tailwind CSS",
-      "Lucide Icons",
-    ],
+      tech: [
+        "React",
+        "Tailwind CSS",
+        "Framer Motion",
+      ],
+    },
   },
-},
 
+  {
+    slug: "Breadcrumb",
+    name: "Breadcrumb Navigation",
+    description:
+      "A motion-enhanced breadcrumb navigation component with icon support and an animated active-state indicator.",
+    code: "https://github.com/yourname/animated-breadcrumb",
+    component: Breadcrumb,
+    details: {
+      overview:
+        "A modern breadcrumb navigation component designed for Next.js App Router. It highlights the active route using a smooth, shared-layout animated underline while providing subtle hover and tap interactions for inactive items. Icon support improves visual clarity and scanability across navigation paths.",
+      useCases: [
+        "Dashboard navigation",
+        "Documentation hierarchies",
+        "Multi-level UI sections",
+        "Portfolio and project pages",
+        "App router–based layouts",
+      ],
+      whyUse: [
+        "Animated active indicator using shared layout",
+        "Built for Next.js App Router",
+        "Icon-enhanced readability",
+        "Subtle micro-interactions on hover and tap",
+        "Accessible and SEO-friendly markup",
+      ],
+      tech: [
+        "Next.js",
+        "React",
+        "Framer Motion",
+        "Tailwind CSS",
+        "Lucide Icons",
+      ],
+    },
+  },
+
+  {
+    slug: "Imagegrid",
+    name: "Image Grid",
+    description:
+      "A responsive masonry-style grid layout for displaying uneven content blocks with smooth entry animation.",
+    code: "https://github.com/yourname/masonry-grid-layout",
+    component: ImageGrid,
+    details: {
+      overview:
+        "A clean and modern masonry grid layout inspired by brick-wall and Pinterest-style designs. It arranges items into multiple columns with varying heights, minimizing vertical gaps and creating a natural, staggered flow. A subtle blur-to-sharp animation enhances the initial render for a polished visual experience.",
+      useCases: [
+        "Image galleries",
+        "Portfolio showcases",
+        "Blog card layouts",
+        "Pinterest-style feeds",
+        "Content-heavy landing sections",
+      ],
+      whyUse: [
+        "Visually appealing staggered layout",
+        "No complex grid calculations required",
+        "Smooth entrance animation",
+        "Lightweight and easy to customize",
+        "Works well with variable-height content",
+      ],
+
+      tech: [
+        "Next.js",
+        "React",
+        "Framer Motion",
+        "Tailwind CSS",
+        "Lucide Icons",
+      ],
+    },
+  },
 
 ];
 
@@ -345,36 +351,36 @@ export default async function DemoPage({ params }) {
 
   return (
     <>
-    <DemoClient>
-      <div className="min-h-screen bg-background text-foreground p-6">
-        <header className="max-w-3xl mx-auto mb-8">
-          <h1 className="text-3xl font-semibold mb-2">
-            {demo.name}
-          </h1>
-          <p className="text-muted-foreground">
-            {demo.description}
-          </p>
-        </header>
+      <DemoClient>
+        <div className="min-h-screen bg-background text-foreground p-6">
+          <header className="max-w-3xl mx-auto mb-8">
+            <h1 className="text-3xl font-semibold mb-2">
+              {demo.name}
+            </h1>
+            <p className="text-muted-foreground">
+              {demo.description}
+            </p>
+          </header>
 
 
-        <main className="max-w-3xl mx-auto">
-          <div className="
+          <main className="max-w-3xl mx-auto">
+            <div className="
           h-96 rounded-lg bg-muted/70
           flex items-center justify-center
           mb-6 
         ">
-          {PreviewComponent ? (
-              <PreviewComponent />
-            ) : (
-              <p className="text-sm text-muted-foreground">
-                Preview will be added very soon…
-              </p>
-            )}
-          </div>
+              {PreviewComponent ? (
+                <PreviewComponent />
+              ) : (
+                <p className="text-sm text-muted-foreground">
+                  Preview will be added very soon…
+                </p>
+              )}
+            </div>
 
 
-          <div className="flex gap-4">
-            {/* <a
+            <div className="flex gap-4">
+              {/* <a
             href={demo.code}
             target="_blank"
             rel="noreferrer"
@@ -383,19 +389,19 @@ export default async function DemoPage({ params }) {
             View Code
           </a> */}
 
-            <Link
-              href="/MyWork"
-              className="text-md font-medium text-muted-foreground hover:text-foreground transition"
-            >
-              Back to Components
-            </Link>
-          </div>
+              <Link
+                href="/MyWork"
+                className="text-md font-medium text-muted-foreground hover:text-foreground transition"
+              >
+                Back to Components
+              </Link>
+            </div>
 
-          <div className="pt-2">
-            <DescriptionSection details={demo.details} />
-          </div>
-        </main>
-      </div>
+            <div className="pt-2">
+              <DescriptionSection details={demo.details} />
+            </div>
+          </main>
+        </div>
       </DemoClient>
     </>
   );

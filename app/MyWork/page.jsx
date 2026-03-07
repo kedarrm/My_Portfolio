@@ -21,8 +21,8 @@ import GridLayout from "../demos/[slug]/_components/Grid";
 import { SiCss3, SiTailwindcss } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import Breadcrumb from "../demos/[slug]/_components/Breadcrums";
-import { FaBreadSlice } from "react-icons/fa";
 import { PiBreadFill } from "react-icons/pi";
+import ImageGrid from "../demos/[slug]/_components/ImageGrid";
 
 
 const categories = [
@@ -138,6 +138,14 @@ const componentsData = [
     description: "Breadcrumb with using React, Tailwind and Framer motion.",
     tech: ["React", "Tailwind", "Framer Motion"],
     slug: "Breadcrumb",
+  },
+  {
+    id: 11,
+    name: "Image Grid",
+    category: "Grid",
+    description: "Masonry image Grid using React, Tailwind and Framer motion.",
+    tech: ["React", "Tailwind", "Framer Motion"],
+    slug: "Imagegrid",
   }
 ];
 
@@ -152,6 +160,7 @@ const previewMap = {
   "Vertical Skeleton Loader": <VerticalSkeletonLoader />,
   "Masonry Grid": <GridLayout />,
   "Breadcrumb": <Breadcrumb />,
+  "Image Grid": <ImageGrid />,
 
 };
 
