@@ -11,7 +11,8 @@ import AnimatedText from "../demos/[slug]/_components/Text";
 import {
   Github, Linkedin, Mail, LayoutGrid, Sparkles, Navigation, Type, PanelTop, Atom, BadgeAlert,
   Loader, Grid,
-  TypeIcon
+  TypeIcon,
+  ExternalLink
 } from "lucide-react";
 import PageLoader from "@/components/PageLoader";
 import Badge from "../demos/[slug]/_components/Badge";
@@ -193,6 +194,10 @@ export default function ComponentsPage() {
             High-performance, accessible UI and reusable components built with modern React
             and animation-first design principles.
           </p>
+
+          {/* Landing Pages link */}
+          <Link href="/demos" className="mt-4 py-2 px-2 bg-background">View Landing Pages</Link>
+
           <p className="text-xs sm:text-sm text-muted-foreground pt-3">More components will be adding soon...</p>
         </header>
 
@@ -247,12 +252,13 @@ export default function ComponentsPage() {
                       {previewMap[component.name]}
                     </div>
 
-                    <div className="absolute inset-0 bg-background/50 backdrop-blur opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                    <div className="absolute inset-0 bg-background/60 backdrop-blur opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
                       <Link
                         href={`/demos/${component.slug}`}
-                        className="text-xs text-foreground bg-accent rounded-lg px-4 py-1 border border-background"
+                        className="text-xs  bg-accent rounded-lg px-4 py-2 border flex flex-row gap-2"
                       >
-                        Try Live →
+                        <ExternalLink size={14} />
+                        View Live
                       </Link>
                     </div>
                   </div>
@@ -275,8 +281,8 @@ export default function ComponentsPage() {
                         <span
                           key={tech}
                           className="flex items-center gap-1.5
-                            text-[10px] sm:text-xs bg-accent hover:bg-accent/40
-                            rounded-sm px-2 py-1 text-muted-foreground hover:text-foreground ring-1 ring-offset-2 ring-foreground/20 ring-offset-background"
+                            text-[10px] sm:text-xs bg-accent
+                            rounded-sm px-2 py-1 text-foreground/40"
                         >
                           {TechIcon && <TechIcon className="h-3 w-3" />}
                           {tech}
