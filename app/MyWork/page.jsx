@@ -255,7 +255,7 @@ export default function ComponentsPage() {
                     <div className="absolute inset-0 bg-background/60 backdrop-blur opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
                       <Link
                         href={`/demos/${component.slug}`}
-                        className="text-xs  bg-accent rounded-lg px-4 py-2 border flex flex-row gap-2"
+                        className="text-xs  bg-accent rounded-lg px-4 py-1.5 border flex flex-row gap-1"
                       >
                         <ExternalLink size={14} />
                         View Live
