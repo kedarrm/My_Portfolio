@@ -8,7 +8,6 @@ import AnimatedText from "./_components/Text";
 import DescriptionSection from "@/app/MyWork/_components/Description";
 import DemoClient from "./DemoClient";
 import Badge from "./_components/Badge";
-import NewComp from "./_components/TextSwitcher";
 import TextSwitcher from "./_components/TextSwitcher";
 import VerticalSkeletonLoader from "./_components/Loader";
 import GridLayout from "./_components/Grid";
