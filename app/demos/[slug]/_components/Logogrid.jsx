@@ -68,7 +68,7 @@ const borderClasses = [
 function LogoCell({ logo, index, animate }) {
   return (
     <motion.div
-      className={`flex items-center justify-center px-3 py-6 sm:px-6 sm:py-8 border border-white/[0.07] ${borderClasses[index]}`}
+      className={`flex items-center justify-center px-3 py-6 sm:px-6 sm:py-8 border border-foreground/30 ${borderClasses[index]}`}
       initial={{ opacity: 0, filter: "blur(12px)", scale: 0.96 }}
       animate={
         animate
