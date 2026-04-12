@@ -206,7 +206,7 @@ export default function ComponentsPage() {
           </p>
 
           {/* Landing Pages link */}
-          <Link href="/demos" className="mt-4 py-2 px-2 bg-background">View Landing Pages</Link>
+          {/* <Link href="/demos" className="mt-4 py-2 px-2 bg-background">View Landing Pages</Link> */}
 
           <p className="text-xs sm:text-sm text-muted-foreground pt-3">More components will be adding soon...</p>
         </header>
