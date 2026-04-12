@@ -13,6 +13,7 @@ import VerticalSkeletonLoader from "./_components/Loader";
 import GridLayout from "./_components/Grid";
 import Breadcrumb from "./_components/Breadcrums";
 import ImageGrid from "./_components/ImageGrid";
+import LogoGrid from "./_components/Logogrid";
 
 
 const demos = [
@@ -328,6 +329,45 @@ const demos = [
       ],
     },
   },
+
+  {
+  slug: "LogoGrid",
+  name: "Logo Grid",
+  description:
+    "A staggered animated logo grid with blur and scale transitions, ideal for brand showcases and trusted-by sections.",
+  code: "https://github.com/yourname/animated-logo-grid",
+  component: LogoGrid,
+  details: {
+    overview:
+      "A premium, animated logo grid designed to showcase brands, partners, or clients. Each logo cell animates in with a smooth blur, fade, and scale effect using staggered timing for a natural, organic feel. The grid includes subtle borders, custom typography, and a replay interaction for re-triggering the animation sequence.",
+    useCases: [
+      "Trusted-by brand sections",
+      "Client and partner showcases",
+      "SaaS landing pages",
+      "Portfolio and agency websites",
+      "Social proof sections",
+    ],
+    whyUse: [
+      "Staggered entrance animations for visual rhythm",
+      "Lightweight motion using Framer Motion",
+      "Subtle borders and refined layout",
+      "Customizable logo rendering system",
+      "Interactive replay control for demos",
+    ],
+    variants: [
+      "Auto-play only (no replay button)",
+      "Responsive 2 / 3 / 4 column layouts",
+      "Hover-to-highlight logo cells",
+      "Dark / light theme variants",
+    ],
+    tech: [
+      "React",
+      "Framer Motion",
+      "Tailwind CSS",
+      "Next.js",
+    ],
+  },
+}
 
 ];
 

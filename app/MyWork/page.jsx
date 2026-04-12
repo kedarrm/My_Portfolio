@@ -11,7 +11,6 @@ import AnimatedText from "../demos/[slug]/_components/Text";
 import {
   Github, Linkedin, Mail, LayoutGrid, Sparkles, Navigation, Type, PanelTop, Atom, BadgeAlert,
   Loader, Grid,
-  TypeIcon,
   ExternalLink
 } from "lucide-react";
 import PageLoader from "@/components/PageLoader";
@@ -24,6 +23,7 @@ import { TbBrandFramerMotion } from "react-icons/tb";
 import Breadcrumb from "../demos/[slug]/_components/Breadcrums";
 import { PiBreadFill } from "react-icons/pi";
 import ImageGrid from "../demos/[slug]/_components/ImageGrid";
+import LogoGrid from "../demos/[slug]/_components/Logogrid";
 
 
 const categories = [
@@ -147,7 +147,16 @@ const componentsData = [
     description: "Masonry image Grid using React, Tailwind and Framer motion.",
     tech: ["React", "Tailwind", "Framer Motion"],
     slug: "Imagegrid",
-  }
+  },
+  {
+    id: 12,
+    name: "Logo Grid",
+    category: "Grid",
+    description: "Logo Grid using React, Tailwind and Framer motion.",
+    tech: ["React", "Tailwind", "Framer Motion"],
+    slug: "LogoGrid",
+  },
+
 ];
 
 const previewMap = {
@@ -162,6 +171,7 @@ const previewMap = {
   "Masonry Grid": <GridLayout />,
   "Breadcrumb": <Breadcrumb />,
   "Image Grid": <ImageGrid />,
+  "Logo Grid": <LogoGrid />,
 
 };
 
@@ -247,7 +257,7 @@ export default function ComponentsPage() {
                   className="rounded-xl border border-border bg-background p-4 sm:p-5 hover:bg-muted/40 transition"
                 >
                   {/* Preview */}
-                  <div className="relative group h-64 sm:h-80 lg:h-96 rounded-lg bg-muted overflow-hidden mb-3">
+                  <div className="relative group h-64 sm:h-80 lg:h-100 rounded-lg bg-muted overflow-hidden mb-3">
                     <div className="flex items-center justify-center h-full scale-90">
                       {previewMap[component.name]}
                     </div>
