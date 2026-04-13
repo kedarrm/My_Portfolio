@@ -291,8 +291,8 @@ export default function ComponentsPage() {
                         <span
                           key={tech}
                           className="flex items-center gap-1.5
-                            text-[10px] sm:text-xs bg-accent
-                            rounded-sm px-2 py-1 text-foreground/40"
+                            text-[10px] sm:text-xs bg-muted text-foreground
+                            rounded-sm px-2 py-1.5"
                         >
                           {TechIcon && <TechIcon className="h-3 w-3" />}
                           {tech}

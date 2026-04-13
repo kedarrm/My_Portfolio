@@ -171,7 +171,7 @@ export default function DescriptionSection({ details }) {
             return (
               <motion.span
                 key={tech}
-                className="group flex items-center gap-2 cursor-default rounded-lg bg-accent/60 hover:bg-accent/40 px-4 py-1.5 text-sm font-medium text-muted-foreground hover:text-foreground shadow-sm ring-1 ring-offset-2 ring-foreground/20 ring-offset-background transition"
+                className="group flex items-center gap-2 cursor-default rounded-lg bg-muted text-foreground px-4 py-1.5 text-sm shadow-2xl transition-transform group-hover:scale-110"
               >
                 {Icon && (
                   <Icon
