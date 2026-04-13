@@ -195,10 +195,8 @@ export default function ProjectsSection() {
                     variants={techItem}
                     whileHover={{ y: -2 }}
                     className="inline-flex items-center gap-2 rounded-md mt-2
-                               px-2.5 py-1 text-xs
-                               text-muted-foreground transition
-                               ring-1 ring-offset-2 ring-foreground/20 ring-offset-background
-                               hover:bg-muted hover:text-foreground "
+                               px-2.5 py-1.5 text-xs
+                               bg-muted text-foreground"
                   >
                     {Icon && <Icon className="h-3.5 w-3.5" />}
                     {tech}

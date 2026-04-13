@@ -111,7 +111,7 @@ export default function SkillsSection() {
                     key={skill.name}
                     variants={item}
                     whileHover={{ y: -2 }}
-                    className="group flex items-center sm:mt-0 mt-1 sm:gap-1.5 gap-1 rounded-sm sm:rounded-md px-2 sm:px-3 py-1 sm:py-2 text-xs sm:text-sm text-muted-foreground bg-accent/50 hover:bg-accent hover:text-foreground transition ring-1 ring-offset-2 ring-foreground/20 ring-offset-background"
+                    className="group flex items-center sm:mt-0 mt-1 sm:gap-1.5 gap-1 rounded-sm sm:rounded-md px-2 sm:px-3 py-1 sm:py-2 text-xs sm:text-sm bg-muted text-foreground transition"
                   >
                     <motion.span
                       whileHover={{ scale: 1.15 }}

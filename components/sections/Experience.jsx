@@ -153,16 +153,7 @@ export default function ExperienceTimeline() {
                                 key={name}
                                 whileHover={{ y: -2 }}
                                 transition={{ type: "spring", stiffness: 300 }}
-                                className="
-                  inline-flex items-center gap-1.5
-                  rounded-md 
-                  px-2.5 py-1
-                  text-xs text-muted-foreground
-                  bg-background hover:text-foreground
-                  hover:bg-muted
-                  transition
-                  ring-1 ring-offset-2 ring-foreground/20 ring-offset-background
-                "
+                                className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1.5 text-xs text-foreground bg-muted"
                             >
                                 <Icon className="h-3.5 w-3.5" />
                                 {name}
